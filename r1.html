@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlySquatch - Bigfoot Life Coaching</title>
+    <style>
+        :root {
+            --forest-green: #1a3f2b;
+            --moss-green: #4a6b3f;
+            --wood-brown: #6b4f35;
+            --accent-orange: #d94f1c;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, var(--forest-green), var(--moss-green));
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 3px dashed var(--accent-orange);
+        }
+
+        h1 {
+            font-family: 'Brush Script MT', cursive;
+            font-size: 4em;
+            margin: 0;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+        }
+
+        .hero {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin: 50px 0;
+            flex-wrap: wrap;
+        }
+
+        .coach-image {
+            flex: 1;
+            min-width: 300px;
+            border: 5px solid var(--wood-brown);
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+
+        .coach-image:hover {
+            transform: scale(1.02);
+        }
+
+        .description {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .description:before {
+            content: '🖐';
+            font-size: 40px;
+            position: absolute;
+            top: -30px;
+            left: -20px;
+            transform: rotate(-30deg);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent-orange);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 20px 0;
+            transition: all 0.3s;
+            border: 3px solid white;
+        }
+
+        .cta-button:hover {
+            background: #ff6b3d;
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 50px 0;
+        }
+
+        .benefit-card {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid var(--wood-brown);
+        }
+
+        .testimonials {
+            margin: 60px 0;
+            background: rgba(0,0,0,0.2);
+            padding: 30px;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials:before {
+            content: '🦶';
+            font-size: 100px;
+            position: absolute;
+            opacity: 0.1;
+            top: -30px;
+            right: -30px;
+            transform: rotate(25deg);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background: var(--forest-green);
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid var(--wood-brown);
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card:before {
+            content: '“';
+            font-size: 60px;
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            color: var(--accent-orange);
+            opacity: 0.7;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        .client-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--moss-green);
+            border-radius: 50%;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0,0,0,0.2);
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>OnlySquatch</h1>
+            <p>Life Coaching from Your Forest Friend 🌲</p>
+        </header>
+
+        <div class="hero">
+            <img src="https://github.com/johnowhitaker/onlysquatch/raw/main/squatch1.jpg" alt="Coach Squatch on Zoom" class="coach-image">
+            <div class="description">
+                <h2>Unlock Your Inner Yeti!</h2>
+                <p>Tired of human advice? Get life coaching from nature's most mysterious mentor! Coach Squatch combines ancient woodland wisdom with modern business savvy to help you:</p>
+                <ul>
+                    <li>Climb the corporate tree</li>
+                    <li>Navigate relationship rivers</li>
+                    <li>Find your life's trail</li>
+                </ul>
+                <a href="#" class="cta-button" id="subscribeButton">Subscribe on OnlyFans! ($29.99/mo)</a>
+            </div>
+        </div>
+
+        <div class="benefits">
+            <div class="benefit-card">
+                <h3>🌲 Forest Fresh Perspective</h3>
+                <p>Break out of your human mindset with truly wild insights</p>
+            </div>
+            <div class="benefit-card">
+                <h3>🦶 Bigfoot Accountability</h3>
+                <p>We'll track your progress (but leave no trace)</p>
+            </div>
+            <div class="benefit-card">
+                <h3>🌄 Wilderness Wisdom</h3>
+                <p>Learn survival skills for both boardroom and backcountry</p>
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <h2 style="text-align: center; margin-bottom: 20px;">🌲 What Clients Are Howling 🌲</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"Coach Squatch changed my life! His 'tree-top perspective' helped me see through the corporate canopy. Now I'm CEO of my own acorn startup!"</p>
+                    <div class="client-info">
+                        <div class="client-icon">🐿️</div>
+                        <div>
+                            <strong>Sammy Squirrel</strong><br>
+                            <em>Former Human Resources Rat</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>"I was lost in the wilderness of middle management. Squatch's moss-based meditation techniques helped me find my true north!"</p>
+                    <div class="client-info">
+                        <div class="client-icon">🧑💼</div>
+                        <div>
+                            <strong>Karen H.</strong><br>
+                            <em>Recovered Corporate Drone</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p>"Best $29.99/month I've ever spent! The 'Moonlight Howl Strategy Session' alone was worth it. My profits have grown 300%... just like Squatch's hair!"</p>
+                    <div class="client-info">
+                        <div class="client-icon">🦉</div>
+                        <div>
+                            <strong>Ollie Owl</strong><br>
+                            <em>Night Shift Entrepreneur</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>⚠️ Warning: May cause increased confidence, better life decisions, and unexplained muddy footprints</p>
+            <p>© 2023 OnlySquatch - Not actually affiliated with real sasquatches (probably)</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('subscribeButton').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('🦍 OOAAAHHH! (Translation: Welcome to the family! Check your email for next steps!)');
+            window.location.href = 'https://onlyfans.com'; // Replace with actual link
+        });
+
+        const cards = document.querySelectorAll('.benefit-card, .testimonial-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.transform = 'rotate(1deg) scale(1.02)';
+            });
+            card.addEventListener('mouseout', () => {
+                card.style.transform = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
