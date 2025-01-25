@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlySquatch - The SASQUATCHed Life</title>
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #fdcdfd;
+            --background: #1a1a1a;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #0a0a0a);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        h1, h2 {
+            color: #ff6b6b;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #ff6b6b, #fdcdfd);
+            border-radius: 20px;
+            padding: 1rem 4rem;
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 90px;
+            border-radius: 50%;
+            margin: 4rem auto;
+            top: 2rem;
+            position: relative;
+            text-align: center;
+        }
+
+        .profile-img img {
+            background-color: #ff6b6b;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        canvas {
+            max-width: 90%;
+            height: auto;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>OnlySquatch - The SASQUATCHed Life</h1>
+        <p>Becoming a SASQUATCHED profiler</p>
+    </header>
+
+    <div class="profile-img">
+        <img src="https:// CDNlake.com/uploads/onlysquatch-screenshot.jpg" alt="SASQUATCH-zed professor">
+    </div>
+
+    <button class="cta-button" onclick="startVideo()">Start the Debate!</button>
+
+    <script>
+        const canvas = document.querySelector('canvas');
+        const context = canvas.getContext('2d');
+
+        const background = document.body.style.backgroundColor;
+        const textColor = '#ffffff';
+
+        function loadVideo() {
+            // Load and play the video
+            context.width = window.innerWidth;
+            context.height = window.innerHeight;
+            let loading = true;
+
+            if (window.addEventListener) {
+                let e;
+                e = setInterval(() => {
+                    if (loading) return;
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                    textColor = --fontSize;
+                    canvas.innerHTML = '';
+                    setTimeout(() => {
+                        video.play();
+                        loading = false;
+                    }, 200);
+                }, 100)
+            }
+        }
+
+        function playVideo() {
+            if (canvas && canvas.width && canvas.height) {
+                video = canvas.create('video');
+                video.src = 'squatch1.jpg';
+                video.width = canvas.width;
+                video.height = canvas.height;
+                video.play();
+                canvas.reset;
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', loadVideo);
+        window.addEventListener('keydown', playVideo);
+
+        // Initialize the CTA button
+        document.querySelector('.cta-button').addEventListener('click', startVideo);
+    </script>
+</body>
+</html>
