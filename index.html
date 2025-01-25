@@ -188,6 +188,38 @@
             color: #6b6b6b;
         }
 
+        /* Testimonial Section Styles */
+        .testimonials {
+            background-color: #e8e5df; /* Slightly lighter background for testimonials */
+        }
+
+        .testimonial-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Slightly wider min width */
+            gap: 30px;
+        }
+
+        .testimonial {
+            padding: 25px; /* Slightly more padding */
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.07); /* Slightly stronger shadow */
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial p {
+            margin-bottom: 15px;
+        }
+
+        .testimonial-author {
+            text-align: right;
+            font-style: normal;
+            font-weight: bold;
+            color: #666;
+        }
+
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .hero {
@@ -198,7 +230,7 @@
                 margin-right: 0;
                 margin-bottom: 20px;
             }
-            .section-content {
+            .section-content, .testimonial-content { /* Apply to testimonial content too */
                 grid-template-columns: 1fr; /* Stack on smaller screens */
             }
         }
@@ -265,6 +297,27 @@
             </div>
         </div>
     </section>
+
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">Hear What People Are Saying About Coach Squatch</h2>
+            <div class="testimonial-content">
+                <div class="testimonial">
+                    <p>"Before Coach Squatch, my career was like a tangled vine in the forest. Now, thanks to his guidance, I'm climbing to the canopy!  Highly recommend for anyone feeling a little... lost in the woods."</p>
+                    <p class="testimonial-author">- Barry "Trailblazer" Thompson, Marketing Executive</p>
+                </div>
+                <div class="testimonial">
+                    <p>"I was skeptical at first, but Coach Squatch really helped me see the forest for the trees when it came to my startup.  His unique insights were invaluable, and surprisingly, his fur is very calming to look at on video calls."</p>
+                    <p class="testimonial-author">-  Jane "Acorn"  Doe, Tech Entrepreneur</p>
+                </div>
+                <div class="testimonial">
+                    <p>"My relationship was on the rocks. Coach Squatch helped us communicate better... mostly through interpretive howls and pointing at things, but it worked! We're stronger than ever now. Thanks, Squatch!"</p>
+                    <p class="testimonial-author">-  A Happy (and Slightly Confused) Couple,  The Pine Family</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="section cta-section">
         <div class="container" style="text-align: center;">
