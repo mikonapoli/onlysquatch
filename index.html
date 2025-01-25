@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlySquatch - Your Hairy Hand in Life</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            color: #333;
+            background-color: #f8f8f8;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #e0e0e0;
+            border-bottom: 3px solid #777;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #555;
+            font-style: italic;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .hero-image {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .hero-text p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #444;
+        }
+
+        .section-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .feature h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .feature p {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #e0e0e0;
+            border-top: 3px solid #777;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        /* Bigfoot Theme Tweaks */
+        body {
+            background-color: #f0ede6; /* Light earthy background */
+            color: #4d4d4d; /* Darker earthy text */
+        }
+
+        header {
+            background-color: #d6d0c4; /* Lighter earthy header */
+            border-bottom-color: #8f8a80; /* Darker earthy border */
+        }
+
+        header h1 {
+            color: #3a3a3a; /* Even darker header text */
+            font-family: 'Arial Black', sans-serif; /* Bold, slightly rugged font for header */
+            text-shadow: 2px 2px 3px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+        }
+
+        header p {
+            color: #6b6b6b;
+        }
+
+        .cta-button {
+            background-color: #795548; /* Earthy brown button */
+            border: 2px solid #5d4037; /* Darker brown border */
+        }
+
+        .cta-button:hover {
+            background-color: #5d4037; /* Darker brown on hover */
+            border-color: #4e342e; /* Even darker hover border */
+        }
+
+        .section-title {
+            color: #3a3a3a;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .feature {
+            background-color: #fffefc; /* Off-white feature boxes */
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.03); /* Softer shadow */
+        }
+
+        .feature h3 {
+            color: #555;
+        }
+
+        footer {
+            background-color: #d6d0c4;
+            border-top-color: #8f8a80;
+            color: #6b6b6b;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .section-content {
+                grid-template-columns: 1fr; /* Stack on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>OnlySquatch</h1>
+            <p>Unleash Your Inner Beast (With Guidance)</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-image">
+                <img src="https://github.com/johnowhitaker/onlysquatch/blob/main/squatch1.jpg?raw=true" alt="Sasquatch Lifecoach on Zoom Call">
+            </div>
+            <div class="hero-text">
+                <h2>Stuck in the Woods? Let Coach Squatch Guide You Out.</h2>
+                <p>Feeling lost in the corporate jungle or the wilderness of life decisions?  OnlySquatch is here to help. Get personalized, one-on-one coaching from a real, live (ish), Sasquatch.  Yes, you heard that right.</p>
+                <p>Coach Squatch brings a unique perspective, honed by years of observing human behavior from the fringes of civilization. He's seen it all, from bad quarterly reports to questionable fashion choices. And he's ready to help you navigate your own path to success and happiness.</p>
+                <a href="https://onlyfans.com/coachsquatch" class="cta-button" target="_blank">Subscribe to Coach Squatch on OnlyFans</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about">
+        <div class="container">
+            <h2 class="section-title">What is Sasquatch Lifecoaching?</h2>
+            <div class="section-content">
+                <div class="feature">
+                    <h3>Unconventional Wisdom</h3>
+                    <p>Forget stuffy boardrooms and corporate jargon. Coach Squatch delivers raw, unfiltered advice straight from the heart of the forest. Expect a coaching style that's as refreshing as a mountain spring and as insightful as a wise old owl (if owls were really, really tall and hairy).</p>
+                </div>
+                <div class="feature">
+                    <h3>Personalized Guidance</h3>
+                    <p>Each session is tailored to your unique needs and challenges. Whether you're facing career crossroads, relationship ruts, or just need someone to vent to about your boss, Coach Squatch is all ears (figuratively, of course, Sasquatch ears are notoriously difficult to see on video calls).</p>
+                </div>
+                <div class="feature">
+                    <h3>Accountability with a Roar</h3>
+                    <p>Need someone to keep you on track? Coach Squatch's gentle (but firm) encouragement will motivate you to reach your goals.  Think of him as your personal Sasquatch-sized cheerleader, minus the pom-poms, plus the occasional cryptic forest metaphor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section why-squatch">
+        <div class="container">
+            <h2 class="section-title">Why Choose OnlySquatch?</h2>
+            <div class="section-content">
+                <div class="feature">
+                    <h3>Unique Perspective</h3>
+                    <p>Where else are you going to get life advice from a legendary cryptid? Coach Squatch offers a perspective unlike any other, breaking free from conventional thinking to help you see your challenges in a whole new light.</p>
+                </div>
+                <div class="feature">
+                    <h3>Confidential & Discreet</h3>
+                    <p>Your secrets are safe with Coach Squatch. He's been living off the grid for years, discretion is his middle name (probably... we haven't actually asked).  Your coaching sessions are 100% confidential.</p>
+                </div>
+                <div class="feature">
+                    <h3>It's Fun!</h3>
+                    <p>Let's be honest, life coaching can be serious business. But with OnlySquatch, you're guaranteed to have a few laughs along the way.  Who says personal growth can't be entertaining? </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta-section">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Ready to Get Squatchified?</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Don't wait to unleash your full potential. Coach Squatch is ready to guide you on your journey.</p>
+            <a href="https://onlyfans.com/coachsquatch" class="cta-button cta-button-large" target="_blank">Subscribe Now & Start Your Transformation!</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            © 2023 OnlySquatch. All Rights Reserved.  (Probably. We haven't consulted with lawyers yet.)
+            <p style="font-size: 0.8em; margin-top: 5px;">Disclaimer: OnlySquatch coaching is for entertainment purposes. Actual results may vary. May or may not involve actual Sasquatch. Side effects may include increased confidence, uncontrollable urges to eat berries, and a newfound appreciation for the wilderness.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
