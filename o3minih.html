@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OnlySquatch – Your Sasquatch Lifecoach</title>
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #1b1b1b;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    a {
+      color: #ff9800;
+      text-decoration: none;
+    }
+    /* Header */
+    header {
+      background: #2c2c2c;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 2px solid #444;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    /* Coach Section */
+    .coach {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background: #242424;
+    }
+    .coach .squatch-img {
+      max-width: 100%;
+      width: 600px;
+      border: 5px solid #444;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      margin: 1rem;
+    }
+    .coach-info {
+      max-width: 600px;
+      margin: 1rem;
+    }
+    .coach-info h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .coach-info p {
+      font-size: 1.1rem;
+    }
+    /* Call-to-Action Section */
+    .cta {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #333;
+    }
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: #ff9800;
+      color: #1b1b1b;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #e68900;
+      transform: scale(1.05);
+    }
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #2c2c2c;
+      font-size: 0.9rem;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .coach {
+        flex-direction: column;
+      }
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .cta h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OnlySquatch</h1>
+    <p>Your Sasquatch Lifecoach for Business &amp; Life</p>
+  </header>
+
+  <section class="coach">
+    <!-- Use the provided image (raw GitHub link) -->
+    <img src="https://raw.githubusercontent.com/johnowhitaker/onlysquatch/main/squatch1.jpg" alt="Coach Squatch on a Zoom Call" class="squatch-img">
+    <div class="coach-info">
+      <h2>Meet Coach Squatch</h2>
+      <p>
+        Feeling lost in the concrete jungle? Coach Squatch is here to guide you through the wild challenges of life and business. With a raw, untamed approach and a heart as big as the forest, he’ll help you break free from the ordinary and tap into your inner beast.
+      </p>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Unleash Your Inner Beast?</h2>
+    <!-- Call to Action -->
+    <a href="https://onlyfans.com/" target="_blank" class="cta-button">Subscribe to Coach Squatch on OnlyFans</a>
+  </section>
+
+  <footer>
+    <p>© 2025 OnlySquatch. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Simple fade-in animation on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      document.body.style.opacity = 0;
+      document.body.style.transition = "opacity 1.5s";
+      setTimeout(function() {
+        document.body.style.opacity = 1;
+      }, 100);
+    });
+  </script>
+</body>
+</html>
